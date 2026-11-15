@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-label="NetHunter Console Research screenshot">
+<rect width="800" height="500" fill="#0b1220"/><rect width="800" height="44" fill="#16233a"/>
+<circle cx="24" cy="22" r="7" fill="#ff5f57"/><circle cx="48" cy="22" r="7" fill="#febc2e"/><circle cx="72" cy="22" r="7" fill="#28c840"/>
+<text x="400" y="28" text-anchor="middle" font-family="monospace" font-size="15" fill="#8fa3c0">NetHunter Console Research</text>
+<text x="40" y="95" font-family="sans-serif" font-size="30" font-weight="700" fill="#6ea8ff">NetHunter Console Research</text>
+<text x="40" y="122" font-family="sans-serif" font-size="16" fill="#8fa3c0">Console security research toolkit (demo)</text><text x="40" y="150" font-family="monospace" font-size="20" fill="#8fa3c0">$ nethunter analyze firmware.bin</text><text x="40" y="184" font-family="monospace" font-size="20" fill="#e6edf7">Extracting filesystem ...... done</text><text x="40" y="218" font-family="monospace" font-size="20" fill="#e6edf7">Parsing boot sequence ..... done</text><text x="40" y="252" font-family="monospace" font-size="20" fill="#ffd166">Findings logged: 12</text><text x="40" y="286" font-family="monospace" font-size="20" fill="#28c840">Responsible disclosure draft ready</text></svg>
