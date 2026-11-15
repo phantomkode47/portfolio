@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projects by Victor Samuel Ekpenyong in AI, security research and hardware.">
+  <title>Projects | Victor Samuel Ekpenyong</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main navigation">
+      <a class="logo" href="index.html" aria-label="Victor Samuel Ekpenyong - home"><img src="images/miva-emblem.png" alt="Miva Open University logo" width="42" height="42"><b><span class="full">Victor Samuel Ekpenyong</span><span class="short">Victor S. Ekpenyong</span></b></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="projects.html">Projects</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-tools">
+        <button class="theme-btn" id="themeBtn" type="button" aria-label="Toggle light and dark theme">☀ Light</button>
+        <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-banner container">
+      <p class="eyebrow">Portfolio</p>
+      <h1>My Projects</h1>
+      <p class="lead">A mix of AI, security research and hardware work, built to learn how things work.</p>
+    </section>
+
+    <section class="section">
+      <div class="container grid cols-2">
+
+        <article class="card project reveal">
+          <img src="images/project-digit.svg" alt="Screenshot of the Digit Recognizer training output" loading="lazy">
+          <div class="body">
+            <span class="badge">AI / Machine Learning</span>
+            <h3>Digit Recognizer</h3>
+            <p>
+              A machine-learning project that learns to recognise handwritten digits (0 to 9) from images.
+              It is trained on example digits, then predicts the number in a new image along with a
+              confidence score.
+            </p>
+            <ul class="tags"><li>Python</li><li>Machine Learning</li><li>Image Classification</li></ul>
+            <div class="links">
+              <a class="btn small" href="https://github.com/phantomkode47/digit-recognizer" target="_blank" rel="noopener">View on GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project reveal">
+          <img src="images/project-wifi.svg" alt="Screenshot of the Wi-Fi Security Audit Lab report" loading="lazy">
+          <div class="body">
+            <span class="badge">Cybersecurity</span>
+            <h3>Wi-Fi Security Audit Lab</h3>
+            <p>
+              A home-lab project where I test the security of my own Wi-Fi network. It checks for weak
+              passwords, outdated router firmware and risky settings, then produces a simple report with
+              recommended fixes.
+            </p>
+            <ul class="tags"><li>Network Security</li><li>Linux</li><li>Reporting</li></ul>
+            <div class="links">
+              <a class="btn small" href="https://github.com/phantomkode47" target="_blank" rel="noopener">GitHub Profile</a>
+              <a class="btn small ghost" href="#" aria-disabled="true">Demo (simulated)</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project reveal">
+          <img src="images/project-console.svg" alt="Screenshot of the NetHunter console research toolkit" loading="lazy">
+          <div class="body">
+            <span class="badge">Reverse Engineering</span>
+            <h3>NetHunter Console Research</h3>
+            <p>
+              A research toolkit for studying how the operating system on a game console I own is built.
+              It helps analyse firmware, map the boot sequence and document security findings, the same
+              process researchers use before reporting issues responsibly.
+            </p>
+            <ul class="tags"><li>Reverse Engineering</li><li>Firmware Analysis</li><li>Responsible Disclosure</li></ul>
+            <div class="links">
+              <a class="btn small" href="https://github.com/phantomkode47" target="_blank" rel="noopener">GitHub Profile</a>
+              <a class="btn small ghost" href="#" aria-disabled="true">Write-up (simulated)</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project reveal">
+          <img src="images/project-meter.svg" alt="Screenshot of the Smart Energy Meter Monitor dashboard" loading="lazy">
+          <div class="body">
+            <span class="badge">Hardware / IoT</span>
+            <h3>Smart Energy Meter Monitor</h3>
+            <p>
+              A hardware project that reads electricity usage from a household meter, shows it on a
+              dashboard and estimates the monthly bill. It helps families see which appliances use the
+              most power and cut their costs legitimately.
+            </p>
+            <ul class="tags"><li>Arduino</li><li>Sensors</li><li>Dashboard</li></ul>
+            <div class="links">
+              <a class="btn small" href="https://github.com/phantomkode47" target="_blank" rel="noopener">GitHub Profile</a>
+              <a class="btn small ghost" href="#" aria-disabled="true">Demo (simulated)</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+      <div class="container">
+        <p class="note-box">Links marked "simulated" are placeholders. I'll replace them with real repository links as each project is published.</p>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container reveal">
+        <h2 class="title">Project Summary</h2>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th scope="col">Project</th><th scope="col">Area</th><th scope="col">Main Tools</th><th scope="col">Status</th></tr></thead>
+            <tbody>
+              <tr><td>Digit Recognizer</td><td>AI</td><td>Python</td><td>Published</td></tr>
+              <tr><td>Wi-Fi Security Audit Lab</td><td>Cybersecurity</td><td>Linux, Python</td><td>In progress</td></tr>
+              <tr><td>NetHunter Console Research</td><td>Reverse Engineering</td><td>Firmware tools</td><td>In progress</td></tr>
+              <tr><td>Smart Energy Meter Monitor</td><td>Hardware</td><td>Arduino, sensors</td><td>Planned</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <img class="school-logo" src="images/miva-logo.png" alt="Miva Open University" width="120" height="107">
+    <p>&copy; <span id="year">2026</span> Victor Samuel Ekpenyong · Miva Open University · COS 106 Term Project</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

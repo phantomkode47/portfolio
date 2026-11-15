@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interactive academic planner: add, complete and delete tasks.">
+  <title>Academic Planner | Victor Samuel Ekpenyong</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main navigation">
+      <a class="logo" href="index.html" aria-label="Victor Samuel Ekpenyong - home"><img src="images/miva-emblem.png" alt="Miva Open University logo" width="42" height="42"><b><span class="full">Victor Samuel Ekpenyong</span><span class="short">Victor S. Ekpenyong</span></b></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a class="active" href="planner.html">Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-tools">
+        <button class="theme-btn" id="themeBtn" type="button" aria-label="Toggle light and dark theme">☀ Light</button>
+        <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-banner container">
+      <p class="eyebrow">Tool</p>
+      <h1>Academic Planner</h1>
+      <p class="lead">Plan assignments, tests and study sessions. Your tasks are saved in this browser automatically.</p>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <form id="taskForm" class="planner-form card" novalidate>
+          <input type="text" name="title" placeholder="New task, e.g. Finish COS 106 project" aria-label="Task title" maxlength="120">
+          <input type="text" name="course" placeholder="Course (optional)" aria-label="Course" maxlength="40">
+          <select name="priority" aria-label="Priority">
+            <option value="High">High</option>
+            <option value="Medium" selected>Medium</option>
+            <option value="Low">Low</option>
+          </select>
+          <input type="date" name="due" aria-label="Due date">
+          <button class="btn" type="submit">Add Task</button>
+        </form>
+        <p class="error" id="taskError" role="alert"></p>
+
+        <div class="filters">
+          <button class="chip on" type="button" data-filter="all">All</button>
+          <button class="chip" type="button" data-filter="active">Active</button>
+          <button class="chip" type="button" data-filter="done">Completed</button>
+          <button class="chip" type="button" id="clearDone">Clear completed</button>
+          <span class="counter" id="counter">0 of 0 completed</span>
+        </div>
+
+        <ul id="taskList" aria-live="polite"></ul>
+
+        <div class="progress">
+          <div class="bar"><i id="progressFill" style="width:0"></i></div>
+          <p class="lead" id="progressText" style="margin-top:6px">0% done</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <img class="school-logo" src="images/miva-logo.png" alt="Miva Open University" width="120" height="107">
+    <p>&copy; <span id="year">2026</span> Victor Samuel Ekpenyong · Miva Open University · COS 106 Term Project</p>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/planner.js"></script>
+</body>
+</html>

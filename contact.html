@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Victor Samuel Ekpenyong.">
+  <title>Contact | Victor Samuel Ekpenyong</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main navigation">
+      <a class="logo" href="index.html" aria-label="Victor Samuel Ekpenyong - home"><img src="images/miva-emblem.png" alt="Miva Open University logo" width="42" height="42"><b><span class="full">Victor Samuel Ekpenyong</span><span class="short">Victor S. Ekpenyong</span></b></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html">Planner</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-tools">
+        <button class="theme-btn" id="themeBtn" type="button" aria-label="Toggle light and dark theme">☀ Light</button>
+        <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-banner container">
+      <p class="eyebrow">Say hello</p>
+      <h1>Contact Me</h1>
+      <p class="lead">Want to collaborate, ask a question or join the community I'm building? Send me a message.</p>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <aside class="card">
+          <h2 class="title">Get in Touch</h2>
+          <ul class="list">
+            <li>Email: <a href="mailto:v.ekpenyong9648@miva.edu.ng">v.ekpenyong9648@miva.edu.ng</a></li>
+            <li>Phone: <a href="tel:+2349029663499">+234 902 966 3499</a></li>
+            <li>GitHub: <a href="https://github.com/phantomkode47" target="_blank" rel="noopener">phantomkode47</a></li>
+            <li>School: Miva Open University</li>
+          </ul>
+        </aside>
+
+        <form id="contactForm" class="card" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" placeholder="Your full name">
+            <div class="error" role="alert"></div>
+          </div>
+          <div class="field">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com">
+            <div class="error" role="alert"></div>
+          </div>
+          <div class="field">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="numeric" placeholder="e.g. 08012345678 (digits only)">
+            <div class="error" role="alert"></div>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write your message here..."></textarea>
+            <div class="error" role="alert"></div>
+          </div>
+          <button class="btn" type="submit">Send Message</button>
+          <div class="success" id="success" role="status"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <img class="school-logo" src="images/miva-logo.png" alt="Miva Open University" width="120" height="107">
+    <p>&copy; <span id="year">2026</span> Victor Samuel Ekpenyong · Miva Open University · COS 106 Term Project</p>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
